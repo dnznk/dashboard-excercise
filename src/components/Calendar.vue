@@ -29,8 +29,10 @@
   display: grid;
   text-align: left;
   padding: 1rem;
-  border: 1px solid black;
-  border-radius: 8px;
+  border: 0px solid black;
+  border-radius: 10px;
+
+  box-shadow: 8px 8px 13px #e6e6e6, -8px -8px 13px #ffffff;
   margin: auto;
 
   grid-template-areas:
