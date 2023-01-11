@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+let a = new Date();
+let day = a.getDate();
+</script>
 
 <template>
   <div class="cal">
@@ -6,7 +9,7 @@
       <h1>Calendar</h1>
     </div>
     <div class="cal-date">
-      <h2>12</h2>
+      <h2>{{ day }}</h2>
     </div>
     <div class="entries">
       <div class="first entry">
@@ -51,7 +54,7 @@
 }
 
 .cal-date {
-  font-size: 7rem;
+  font-size: 9rem;
   color: red;
   opacity: 0.2;
   display: flex;
