@@ -1,5 +1,5 @@
 <template>
-  <div class="weather">
+  <div class="weather-container">
     <p class="city">{{ city }}</p>
     <p class="temp">{{ temperature }}°C</p>
     <img :src="iconUrl" alt="weather condition icon" class="condition-icon" />
@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    let url =
+    const url =
       "http://api.weatherapi.com/v1/current.json?key=2488d77e17e841dc887135638231101&q=Berlin&aqi=no";
     fetch(url)
       .then((res) => res.json())
@@ -33,13 +33,13 @@ export default {
 </script>
 
 <style>
-.weather {
+.weather-container {
   position: relative;
-  background: rgb(127, 231, 212);
+  background: rgb(127, 186, 231);
   background: linear-gradient(
-    18deg,
-    rgba(127, 231, 212, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+    120deg,
+    rgba(127, 186, 231, 1) 6%,
+    rgba(84, 179, 195, 1) 94%
   );
   width: 300px;
   height: 300px;
@@ -49,11 +49,11 @@ export default {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-  border: 0px solid black;
+  border: 0;
   border-radius: 10px;
-
   box-shadow: 8px 8px 13px #e6e6e6, -8px -8px 13px #ffffff;
   margin: auto;
+  color: #e6e6e6;
 }
 
 .city {
