@@ -2,6 +2,7 @@
 import Header from "./components/Header.vue";
 import Calendar from "./components/Calendar.vue";
 import Weather from "./components/Weather.vue";
+import Unsplash from "./components/Unsplash.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Weather from "./components/Weather.vue";
   <main>
     <Calendar />
     <Weather />
+    <Unsplash />
   </main>
 </template>
 
