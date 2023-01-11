@@ -1,21 +1,36 @@
-<script setup>
-let url =
-  "http://api.weatherapi.com/v1/current.json?key=2488d77e17e841dc887135638231101&q=Berlin&aqi=no";
-
-fetch(url)
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  });
-</script>
-
 <template>
   <div class="weather">
-    <p class="city">Berlin</p>
-    <p class="temp">6 C</p>
-    <p class="condition">Cloudy</p>
+    <p class="city">{{ city }}</p>
+    <p class="temp">{{ temperature }}°C</p>
+    <img :src="iconUrl" alt="weather condition icon" class="condition-icon" />
+    <p class="condition">{{ weather }}</p>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      city: "",
+      temperature: "",
+      weather: "",
+      iconUrl: "",
+    };
+  },
+  created() {
+    let url =
+      "http://api.weatherapi.com/v1/current.json?key=2488d77e17e841dc887135638231101&q=Berlin&aqi=no";
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        this.city = data.location.name;
+        this.temperature = data.current.temp_c;
+        this.weather = data.current.condition.text;
+        this.iconUrl = data.current.condition.icon;
+      });
+  },
+};
+</script>
 
 <style>
 .weather {
@@ -42,12 +57,12 @@ fetch(url)
 }
 
 .city {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .temp {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .condition {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 </style>
