@@ -1,5 +1,5 @@
 <template>
-  <div id="map"></div>
+  <div id="map" class="box"></div>
 </template>
 
 <script>
@@ -31,5 +31,7 @@ export default {
 #map {
   width: 300px;
   height: 300px;
+  border-radius: 10px;
+  z-index: -1;
 }
 </style>
