@@ -41,11 +41,6 @@ export default {
   height: fit-content;
   font-size: 1.05rem;
   color: hotpink;
-  /* background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-  ); */
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
