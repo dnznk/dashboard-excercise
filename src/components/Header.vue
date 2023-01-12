@@ -35,13 +35,13 @@ export default {
 }
 
 .profile-img img {
-  width: 5vmin;
-  height: 5vmin;
+  width: 10vmin;
+  height: 10vmin;
   border-radius: 50%;
 }
 
 .greeting {
-  font-size: clamp(1rem, 2vmin, 5rem);
+  font-size: clamp(2rem, 5vmin, 5rem);
   color: black;
   align-self: flex-end;
 }

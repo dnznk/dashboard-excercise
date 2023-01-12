@@ -32,6 +32,6 @@ export default {
   width: 300px;
   height: 300px;
   border-radius: 10px;
-  z-index: -1;
+  z-index: 0;
 }
 </style>
