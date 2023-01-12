@@ -1,5 +1,5 @@
 <template>
-  <div class="unsplash-container">
+  <div class="unsplash-container box">
     <img :src="imageUrl" alt="random unsplash image" class="unsplash-img" />
   </div>
 </template>
@@ -24,16 +24,6 @@ export default {
 </script>
 
 <style>
-.unsplash-container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 8px 8px 13px #e6e6e6, -8px -8px 13px #ffffff;
-  margin: auto;
-}
-
 .unsplash-img {
   width: 100%;
   height: 100%;

@@ -4,7 +4,7 @@ let day = a.getDate();
 </script>
 
 <template>
-  <div class="calendar-container">
+  <div class="calendar-container box">
     <div class="cal-heading">
       <h1>Calendar</h1>
     </div>
@@ -27,14 +27,8 @@ let day = a.getDate();
 <style>
 .calendar-container {
   background-color: white;
-  position: relative;
-  width: 300px;
-  height: 300px;
   text-align: left;
   padding: 1rem;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 8px 8px 13px #e6e6e6, -8px -8px 13px #ffffff;
   margin: auto;
 }
 
@@ -54,7 +48,6 @@ let day = a.getDate();
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  z-index: -1;
 }
 
 .time {
