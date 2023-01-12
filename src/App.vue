@@ -26,4 +26,10 @@ import Animation from "./components/Animation.vue";
   border-radius: 10px;
   box-shadow: 4.5px 4.5px 25px #dddedb, -4.5px -4.5px 25px #ffffff;
 }
+
+@media (max-width: 800px) {
+  .box {
+    box-shadow: 1.5px 1.5px 20px black;
+  }
+}
 </style>
