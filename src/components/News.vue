@@ -1,7 +1,7 @@
 <template>
   <div class="news-container box">
     <div class="news-content">
-      <h2 class="news-title">Hello World!</h2>
+      <h2 class="news-title">Latest tech news</h2>
       <p class="news-body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem
         facilis.
