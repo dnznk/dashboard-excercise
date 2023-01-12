@@ -31,4 +31,22 @@ export default {
   border: 0;
   border-radius: 10px;
 }
+
+.unsplash-container::after {
+  content: "Random Unsplash";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.05rem;
+  color: hotpink;
+  /* background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  ); */
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
 </style>
