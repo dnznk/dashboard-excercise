@@ -45,4 +45,10 @@ export default {
   color: black;
   align-self: flex-end;
 }
+
+@media (max-width: 800px) {
+  .greeting-container {
+    background-color: hotpink;
+  }
+}
 </style>
