@@ -28,7 +28,7 @@ body {
   }
   #app {
     background-color: white;
-    width: 50vw;
+    width: fit-content;
     place-items: center;
     justify-content: center;
     display: grid;
@@ -43,7 +43,7 @@ body {
 
   .greeting-container {
     grid-column: span 3;
-    width: 100%;
+    width: 50vw;
   }
   .calendar-container {
     grid-column: span 1;
