@@ -27,7 +27,6 @@ export default {
 
 <style>
 .greeting-container {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   place-items: center;

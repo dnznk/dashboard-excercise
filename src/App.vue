@@ -6,15 +6,10 @@ import Unsplash from "./components/Unsplash.vue";
 </script>
 
 <template>
-  <header>
-    <Header />
-  </header>
-
-  <main>
-    <Calendar />
-    <Weather />
-    <Unsplash />
-  </main>
+  <Header />
+  <Calendar />
+  <Weather />
+  <Unsplash />
 </template>
 
 <style scoped></style>

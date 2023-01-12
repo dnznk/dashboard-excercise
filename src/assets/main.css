@@ -1,20 +1,57 @@
-@import "./base.css";
-
-#app {
-  max-width: 100vw;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-@media (min-width: 1024px) {
+body {
+  min-height: 100vh;
+  background: #f8f8f8;
+  font-family: Inter, sans-serif;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
   body {
-    display: flex;
+    background: rgb(217, 217, 217);
+    background: linear-gradient(
+      63deg,
+      rgba(217, 217, 217, 1) 6%,
+      rgba(222, 180, 216, 1) 30%,
+      rgba(142, 175, 252, 1) 94%
+    );
+  }
+  #app {
+    background-color: white;
+    width: 50vw;
     place-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: inset 9.91px 9.91px 15px #d9dade,
+      inset -9.91px -9.91px 15px #ffffff;
+    padding: 5rem;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
+  .greeting-container {
+    grid-column: span 3;
+    width: 100%;
+  }
+  .calendar-container {
+    grid-column: span 1;
+  }
+  .weather-container {
+    grid-column: span 1;
+  }
+  .unsplash-container {
+    grid-column: span 1;
   }
 }
