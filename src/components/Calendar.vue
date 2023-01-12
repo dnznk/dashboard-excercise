@@ -26,6 +26,7 @@ let day = a.getDate();
 
 <style>
 .calendar-container {
+  background-color: white;
   position: relative;
   width: 300px;
   height: 300px;
