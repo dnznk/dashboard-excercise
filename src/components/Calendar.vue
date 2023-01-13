@@ -38,7 +38,7 @@ let day = a.getDate();
 }
 
 .cal-date {
-  font-size: 9rem;
+  font-size: 8rem;
   color: red;
   opacity: 0.2;
   display: flex;
@@ -46,7 +46,7 @@ let day = a.getDate();
   justify-content: center;
   position: absolute;
   right: 1rem;
-  bottom: 1rem;
+  bottom: 0;
 }
 
 .time {
