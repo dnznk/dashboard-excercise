@@ -1,8 +1,19 @@
+<template>
+  <div class="greeting-container">
+    <div class="profile-img"><img src="../assets/profile.png" alt="" /></div>
+    <div class="greeting">{{ greeting }}</div>
+    <div class="current-time">BERLIN - {{ berlinTime }}</div>
+  </div>
+</template>
+
 <script>
 export default {
   data() {
     return {
       greeting: "",
+      berlinTime: new Date().toLocaleString("de-DE", {
+        timeZone: "Europe/Berlin",
+      }),
     };
   },
   created() {
@@ -15,15 +26,18 @@ export default {
       this.greeting = "Good evening!";
     }
   },
+  methods: {
+    updateTime: function () {
+      this.berlinTime = new Date().toLocaleString("de-DE", {
+        timeZone: "Europe/Berlin",
+      });
+    },
+  },
+  mounted() {
+    setInterval(this.updateTime, 1000);
+  },
 };
 </script>
-
-<template>
-  <div class="greeting-container">
-    <div class="profile-img"><img src="../assets/profile.png" alt="" /></div>
-    <div class="greeting">{{ greeting }}</div>
-  </div>
-</template>
 
 <style>
 .greeting-container {
@@ -50,5 +64,16 @@ export default {
   .greeting-container {
     background-color: hotpink;
   }
+}
+
+.current-time {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  padding: 0.75rem;
 }
 </style>
