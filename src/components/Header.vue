@@ -20,11 +20,15 @@ export default {
   },
   created() {
     let currentHour = new Date().getHours();
-    if (currentHour < 12) {
+    // Testing
+    // let currentHour = 0;
+    if (currentHour >= 22 || currentHour < 6) {
+      this.greeting = "Good night!";
+    } else if (currentHour >= 6 && currentHour < 12) {
       this.greeting = "Good morning!";
-    } else if (currentHour < 18) {
+    } else if (currentHour >= 12 && currentHour < 18) {
       this.greeting = "Good afternoon!";
-    } else {
+    } else if (currentHour >= 18 && currentHour < 22) {
       this.greeting = "Good evening!";
     }
   },
