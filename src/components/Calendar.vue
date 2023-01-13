@@ -29,7 +29,6 @@ let day = a.getDate();
   background-color: white;
   text-align: left;
   padding: 1rem;
-  margin: auto;
 }
 
 .cal-heading {

@@ -45,7 +45,6 @@ export default {
   justify-content: space-between;
   place-items: center;
   padding: 1rem;
-  width: 100%;
 }
 
 .profile-img img {
@@ -55,22 +54,16 @@ export default {
 }
 
 .greeting {
-  font-size: clamp(2rem, 5vmin, 5rem);
+  font-size: clamp(2rem, 5vmin, 3rem);
   color: black;
   align-self: flex-end;
-}
-
-@media (max-width: 800px) {
-  .greeting-container {
-    background-color: hotpink;
-  }
 }
 
 .current-time {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 1rem;
+  font-size: clamp(0.25rem, 1vmin, 0.75rem);
   font-family: monospace;
   background-color: black;
   color: white;

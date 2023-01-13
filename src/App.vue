@@ -10,26 +10,29 @@ import Animation from "./components/Animation.vue";
 
 <template>
   <Header />
-  <Calendar />
-  <Maps />
-  <Weather />
-  <News />
-  <Unsplash />
-  <Animation />
+  <div class="grid-container">
+    <Calendar />
+    <Maps />
+    <Weather />
+    <News />
+    <Unsplash />
+    <Animation />
+  </div>
 </template>
 
 <style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+
 .box {
   position: relative;
   width: 300px;
   height: 300px;
   border-radius: 10px;
   box-shadow: 4.5px 4.5px 25px #dddedb, -4.5px -4.5px 25px #ffffff;
-}
-
-@media (max-width: 800px) {
-  .box {
-    box-shadow: 1.5px 1.5px 20px black;
-  }
 }
 </style>

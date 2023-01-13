@@ -23,90 +23,9 @@ body {
 }
 
 #app {
-  background-color: transparent;
-  width: 100vw;
-  place-items: center;
-  justify-content: center;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-auto-flow: row;
-  padding-bottom: 2rem;
-}
-
-@media (min-width: 800px) and (max-width: 1600px) {
-  body {
-    background: rgb(217, 217, 217);
-    background: linear-gradient(
-      63deg,
-      rgba(217, 217, 217, 1) 6%,
-      rgba(222, 180, 216, 1) 30%,
-      rgba(142, 175, 252, 1) 94%
-    );
-  }
-
-  #app {
-    background-color: #fefffc;
-    width: fit-content;
-    place-items: center;
-    justify-content: center;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: row;
-    border: 2px solid black;
-    border-radius: 50px;
-    padding: 2rem;
-  }
-
-  .greeting-container {
-    grid-column: span 3;
-  }
-  .calendar-container {
-    grid-column: span 1;
-  }
-  .weather-container {
-    grid-column: span 1;
-  }
-  .unsplash-container {
-    grid-column: span 1;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    background: rgb(217, 217, 217);
-    background: linear-gradient(
-      63deg,
-      rgba(217, 217, 217, 1) 6%,
-      rgba(222, 180, 216, 1) 30%,
-      rgba(142, 175, 252, 1) 94%
-    );
-  }
-  #app {
-    background-color: #fefffc;
-    width: fit-content;
-    place-items: center;
-    justify-content: center;
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: row;
-    border: 2px solid black;
-    border-radius: 50px;
-    padding: 5rem;
-  }
-
-  .greeting-container {
-    grid-column: span 3;
-  }
-  .calendar-container {
-    grid-column: span 1;
-  }
-  .weather-container {
-    grid-column: span 1;
-  }
-  .unsplash-container {
-    grid-column: span 1;
-  }
+  background-color: #fefffc;
+  width: 30vw;
+  border-radius: 50px;
+  padding: 5rem;
+  margin: 2rem 0;
 }
