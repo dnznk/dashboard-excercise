@@ -3,7 +3,7 @@
     <div class="profile-img"><img src="../assets/profile.png" alt="" /></div>
     <div class="time-greeting box">
       <div class="greeting">{{ greeting }}</div>
-      <div class="current-time">BERLIN - {{ berlinTime }}</div>
+      <div class="current-time">BERLIN ◉ {{ berlinTime }}</div>
     </div>
   </div>
 </template>
