@@ -21,8 +21,6 @@ export default {
 };
 </script>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-
 .animation-container {
   background-image: radial-gradient(yellow 2%, transparent 2%),
     radial-gradient(yellow 3%, transparent 5%);
@@ -58,7 +56,6 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: hotpink; */
   background: rgba(255, 105, 180, 0.9);
   border: 0;
   border-radius: 10px;

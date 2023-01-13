@@ -1,8 +1,10 @@
 <template>
-  <div class="greeting-container">
+  <div class="header-container">
     <div class="profile-img"><img src="../assets/profile.png" alt="" /></div>
-    <div class="greeting">{{ greeting }}</div>
-    <div class="current-time">BERLIN - {{ berlinTime }}</div>
+    <div class="time-greeting box">
+      <div class="greeting">{{ greeting }}</div>
+      <div class="current-time">BERLIN - {{ berlinTime }}</div>
+    </div>
   </div>
 </template>
 
@@ -40,33 +42,34 @@ export default {
 </script>
 
 <style>
-.greeting-container {
+.header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   place-items: center;
-  padding: 1rem;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  width: fit-content;
 }
 
 .profile-img img {
-  width: 10vmin;
-  height: 10vmin;
+  width: clamp(64px, 5vmax, 128px);
+  height: clamp(64px, 5vmax, 128px);
   border-radius: 50%;
 }
 
 .greeting {
   font-size: clamp(2rem, 5vmin, 3rem);
   color: black;
-  align-self: flex-end;
+  font-family: "Space Mono", monospace;
 }
 
 .current-time {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: clamp(0.25rem, 1vmin, 0.75rem);
+  font-size: 0.9rem;
   font-family: monospace;
   background-color: black;
   color: white;
-  padding: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px 100px;
+  /* border-radius: 0 100px 100px 0; */
 }
 </style>

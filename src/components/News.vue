@@ -6,14 +6,19 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem
         facilis.
       </p>
-      <a href="#" class="news-button">Learn More</a>
+      <a
+        href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?ceid=DE:de&oc=3"
+        target="_blank"
+        rel="noopener"
+        class="news-button"
+        >Learn More</a
+      >
     </div>
   </div>
 </template>
 
 <style>
 .news-container {
-  background-color: white;
   text-align: left;
   background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80);
   background-size: cover;

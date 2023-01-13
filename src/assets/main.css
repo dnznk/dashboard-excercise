@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 *,
 *::before,
 *::after {
@@ -9,7 +11,7 @@
 
 body {
   min-height: 100vh;
-  font-family: Inter, sans-serif;
+  font-family: "Space Mono", monospace;
   display: flex;
   place-items: center;
   justify-content: center;
@@ -24,8 +26,30 @@ body {
 
 #app {
   background-color: #fefffc;
-  width: 30vw;
-  border-radius: 50px;
-  padding: 5rem;
-  margin: 2rem 0;
+  width: 100vw;
+  border-radius: 10px;
+  border: solid 2px black;
+  /* box-shadow: 0.5rem 0.25rem, 1rem 0.5rem, 1.5rem 1rem, 2rem 1.5rem, 2.5rem 2rem,
+    3rem 2.5rem, 3.5rem 3rem, 4rem 3.5rem; */
+  box-shadow: 5rem 5rem;
+  padding: 3rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: #fefffc;
+  }
+}
+
+@media (max-width: 1999px) {
+  #app {
+    width: 70vmax;
+  }
+}
+
+@media (min-width: 2000px) {
+  #app {
+    width: 30vmax;
+  }
 }
