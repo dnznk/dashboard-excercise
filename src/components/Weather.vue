@@ -2,8 +2,11 @@
   <div class="weather-container box">
     <p class="city">{{ city }}</p>
     <p class="temp">{{ temperature }}°C</p>
-    <img :src="iconUrl" alt="weather condition icon" class="condition-icon" />
-    <p class="condition">{{ weather }}</p>
+    <div class="weather">
+      <img :src="iconUrl" alt="weather condition icon" class="condition-icon" />
+
+      <p class="condition">{{ weather }}</p>
+    </div>
   </div>
 </template>
 
@@ -44,9 +47,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.1rem;
   padding: 1rem;
   color: #e6e6e6;
+  font-family: "Inter", sans-serif;
 }
 
 .city {
@@ -56,6 +60,11 @@ export default {
   font-size: 3.5rem;
 }
 .condition {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
