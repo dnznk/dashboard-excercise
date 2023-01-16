@@ -1,6 +1,6 @@
 # dashboard-excercise
 
-Übungsaufgabe: Dashboard w/ integrated APIs.<br><br>
+Dashboard w/ integrated APIs.<br><br>
 I used
 
 ```sh
