@@ -8,7 +8,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Used APIs
 
-[Unsplashed API Reference](https://unsplash.com/documentation).<br>
+[Unsplash API Reference](https://unsplash.com/documentation).<br>
 [Open Street Map API Reference](https://wiki.openstreetmap.org/wiki/API).<br>
 [WeatherAPI Reference](https://www.weatherapi.com/docs/).
 
