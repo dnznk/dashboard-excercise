@@ -1,6 +1,13 @@
 # dashboard-excercise
 
-Übungsaufgabe: Dashboard mit integrierten APIs.
+Übungsaufgabe: Dashboard w/ integrated APIs.<br>
+I used
+
+```sh
+npm init vue@latest
+```
+
+for setup.
 
 ## Customize configuration
 
