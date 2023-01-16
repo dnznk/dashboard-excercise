@@ -22,7 +22,7 @@ import Animation from "./components/Animation.vue";
 
 <style scoped>
 .grid-container {
-  /* Template I used before for easier setup*/
+  /* Template I used before for easier setup with a maximum column count and grid width.*/
   /*User input values.*/
   --grid-layout-gap: 2rem;
   --grid-column-count: 3;

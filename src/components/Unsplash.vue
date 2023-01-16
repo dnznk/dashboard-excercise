@@ -34,13 +34,14 @@ export default {
 
 .unsplash-container::after {
   content: "Random Unsplash";
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: hotpink;
   position: absolute;
-  bottom: 15px;
-  left: 0;
+  bottom: 10px;
+  left: 2px;
   width: fit-content;
   height: fit-content;
-  font-size: 1.05rem;
-  color: hotpink;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }

@@ -47,12 +47,12 @@ export default {
 
 <style>
 .header-container {
+  width: fit-content;
   display: flex;
   justify-content: flex-start;
   place-items: center;
   gap: 2rem;
   padding-bottom: 2rem;
-  width: fit-content;
 }
 
 .profile-img img {
@@ -63,17 +63,16 @@ export default {
 
 .greeting {
   font-size: clamp(2rem, 5vmin, 3rem);
-  color: black;
   font-family: "Space Mono", monospace;
+  color: black;
 }
 
 .current-time {
   font-size: 0.9rem;
   font-family: monospace;
-  background-color: black;
   color: white;
-  padding: 0.5rem 1rem;
+  background-color: black;
   border-radius: 30px 100px;
-  /* border-radius: 0 100px 100px 0; */
+  padding: 0.5rem 1rem;
 }
 </style>

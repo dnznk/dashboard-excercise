@@ -43,13 +43,13 @@ export default {
     rgba(127, 186, 231, 1) 6%,
     rgba(84, 179, 195, 1) 94%
   );
+  color: #e6e6e6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.1rem;
   padding: 1rem;
-  color: #e6e6e6;
   font-family: "Inter", sans-serif;
 }
 

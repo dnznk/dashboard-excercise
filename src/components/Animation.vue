@@ -41,15 +41,6 @@ export default {
   padding: 0.75rem 1rem;
 }
 
-#rocket {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  animation: moveRocket 8s linear 500ms infinite;
-  transform: rotate(90deg);
-  animation-play-state: paused;
-}
-
 #play-pause-button {
   position: absolute;
   width: fit-content;
@@ -65,6 +56,15 @@ export default {
   mix-blend-mode: screen;
   color: black;
   font-family: "Space Mono", monospace;
+}
+
+#rocket {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  animation: moveRocket 8s linear 500ms infinite;
+  transform: rotate(90deg);
+  animation-play-state: paused;
 }
 
 @keyframes moveRocket {
